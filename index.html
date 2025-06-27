@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Raheem - AR Tech | Frontend & Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <div class="logo-icon"> 
+                    <i class="fas fa-code"></i>
+                </div>
+                <span class="logo-text">AR Tech</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Theme Toggle & Mobile Menu -->
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3D Background Elements -->
+    <div class="bg-3d-container">
+        <div class="floating-cube cube-1"></div>
+        <div class="floating-cube cube-2"></div>
+        <div class="floating-cube cube-3"></div>
+        <div class="floating-sphere sphere-1"></div>
+        <div class="floating-sphere sphere-2"></div>
+        <div class="floating-blob blob-1"></div>
+        <div class="floating-blob blob-2"></div>
+    </div>
+
+    <!-- Particle System -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="greeting">Hello, I'm</span>
+                            <span class="name">Abdul Raheem</span>
+                            <span class="role">Frontend & Full Stack Developer</span>
+                            <span class="specialty">SEO Expert</span>
+                        </h1>
+                        <p class="hero-description">
+                            Welcome to AR Tech - where innovation meets code. I craft digital experiences 
+                            that blend cutting-edge technology with stunning design.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn-primary" onclick="scrollToSection('projects')">
+                                <span>View Projects</span>
+                                <i class="fas fa-rocket"></i>
+                            </button>
+                            <button class="btn-secondary" onclick="scrollToSection('contact')">
+                                <span>Hire Me</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- 3D Avatar/Visual -->
+                    <div class="hero-visual">
+                        <div class="avatar-container">
+                            <div class="avatar-ring ring-1"></div>
+                            <div class="avatar-ring ring-2"></div>
+                            <div class="avatar-ring ring-3"></div>
+                            <div class="avatar-core">
+                                <i class="fas fa-user-astronaut"></i>
+                            </div>
+                            <div class="orbit-dots">
+                                <div class="orbit-dot dot-1"></div>
+                                <div class="orbit-dot dot-2"></div>
+                                <div class="orbit-dot dot-3"></div>
+                                <div class="orbit-dot dot-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <div class="scroll-mouse">
+                        <div class="scroll-wheel"></div>
+                    </div>
+                    <span>Scroll Down</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Passionate developer crafting digital solutions</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="about-card">
+                            <h3>My Journey</h3>
+                            <p>
+                                I'm Abdul Raheem, the founder of AR Tech. With years of experience in 
+                                frontend and full-stack development, I specialize in creating responsive, 
+                                user-friendly applications that deliver exceptional user experiences.
+                            </p>
+                            <p>
+                                My expertise spans across modern web technologies, SEO optimization, and 
+                                digital marketing strategies. I believe in writing clean, efficient code 
+                                that not only works but also scales beautifully.
+                            </p>
+                            
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-number">50+</div>
+                                    <div class="stat-label">Projects Completed</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">3+</div>
+                                    <div class="stat-label">Years Experience</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">100%</div>
+                                    <div class="stat-label">Client Satisfaction</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visual">
+                        <div class="profile-card">
+                            <div class="profile-image">
+                                <div class="profile-avatar">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="profile-glow"></div>
+                            </div>
+                            <div class="profile-info">
+                                <h4>Abdul Raheem</h4>
+                                <p>AR Tech Founder</p>
+                                <div class="profile-tags">
+                                    <span class="tag">Frontend</span>
+                                    <span class="tag">Full Stack</span>
+                                    <span class="tag">SEO Expert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <p class="section-subtitle">Technologies I work with</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Frontend Skills -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5 & CSS3</span>
+                                    <span class="skill-level">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript (ES6+)</span>
+                                    <span class="skill-level">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React.js</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Vue.js</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Full Stack Skills -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>Full Stack Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-level">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Express.js</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MongoDB</span>
+                                    <span class="skill-level">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">PostgreSQL</span>
+                                    <span class="skill-level">78%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="78%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SEO Skills -->
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3>SEO & Marketing</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Technical SEO</span>
+                                    <span class="skill-level">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Content Strategy</span>
+                                    <span class="skill-level">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Analytics & Tracking</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Performance Optimization</span>
+                                    <span class="skill-level">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Some of my recent work</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="E-Commerce Platform">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                            <p class="project-description">
+                                Full-stack e-commerce solution with React, Node.js, and MongoDB. 
+                                Features include user authentication, payment integration, and admin dashboard.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Task Management App">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-description">
+                                Collaborative task management application with real-time updates, 
+                                drag-and-drop functionality, and team collaboration features.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=600" alt="SEO Analytics Dashboard">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">SEO Analytics Dashboard</h3>
+                            <p class="project-description">
+                                Comprehensive SEO tracking dashboard with keyword monitoring, 
+                                competitor analysis, and performance metrics visualization.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">APIs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Learning Management System">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Learning Management System</h3>
+                            <p class="project-description">
+                                Modern LMS platform with course creation, student progress tracking, 
+                                video streaming, and interactive quizzes.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Prisma</span>
+                                <span class="tech-tag">AWS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Real Estate Platform">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Real Estate Platform</h3>
+                            <p class="project-description">
+                                Property listing platform with advanced search filters, 
+                                virtual tours, and integrated CRM for real estate agents.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">GraphQL</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Maps API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fitness Tracking App">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Fitness Tracking App</h3>
+                            <p class="project-description">
+                                Mobile-first fitness application with workout tracking, 
+                                nutrition logging, and social features for fitness enthusiasts.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Redux</span>
+                                <span class="tech-tag">Charts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's work together on your next project</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <h3>Let's Connect</h3>
+                            <p>
+                                Ready to bring your ideas to life? I'm always excited to work on 
+                                new projects and collaborate with amazing people. Let's create 
+                                something extraordinary together!
+                            </p>
+                            
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Email</h4>
+                                        <p>contact@cscodelab.com</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Phone</h4>
+                                        <p>+1 (555) 123-4567</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="method-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="method-info">
+                                        <h4>Location</h4>
+                                        <p>Remote / Worldwide</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Your Email</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" required>
+                                <label for="subject">Subject</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <span class="logo-text">AR Tech</span>
+                    </div>
+                    <p class="footer-description">
+                        Crafting digital experiences with passion and precision. 
+                        Let's build the future together.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Frontend Development</a></li>
+                            <li><a href="#">Full Stack Development</a></li>
+                            <li><a href="#">SEO Optimization</a></li>
+                            <li><a href="#">Web Performance</a></li>
+                            <li><a href="#">Consulting</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Abdul Raheem - AR Tech. All rights reserved.</p>
+                <!-- <p>Made with <i class="fas fa-heart"></i> and lots of coffee</p> -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
